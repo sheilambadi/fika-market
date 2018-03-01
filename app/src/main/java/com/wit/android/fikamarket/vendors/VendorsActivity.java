@@ -1,5 +1,6 @@
 package com.wit.android.fikamarket.vendors;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -15,7 +16,7 @@ import android.view.View;
 
 import com.wit.android.fikamarket.R;
 
-public class FarmersActivity extends AppCompatActivity
+public class VendorsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     NavigationView navigationView;
@@ -87,10 +88,14 @@ public class FarmersActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_make_order) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_orders_made) {
+            Intent i = new Intent(this, OrdersMadeActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_available_stock) {
+            Intent i = new Intent(this, AvailableStockActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_fulfilled_order) {
 

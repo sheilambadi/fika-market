@@ -9,13 +9,13 @@
             android:icon="@drawable/avocado2"
             android:title="Place Order" />
         <item
-            android:id="@+id/nav_orders_made"
-            android:icon="@drawable/buy"
-            android:title="Orders Made" />
-        <item
             android:id="@+id/nav_available_stock"
             android:icon="@drawable/deliver"
             android:title="Available Stock" />
+        <item
+            android:id="@+id/nav_orders_made"
+            android:icon="@drawable/buy"
+            android:title="Orders Made" />
         <item
             android:id="@+id/nav_fulfilled_order"
             android:icon="@drawable/truck2"

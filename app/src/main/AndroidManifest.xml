@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".vendors.FarmersActivity"
+            android:name=".vendors.VendorsActivity"
             android:label="@string/title_activity_farmers"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -21,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".vendors.OrdersMadeActivity"
+            android:label="Orders Made"/>
+        <activity android:name=".vendors.AvailableStockActivity"
+            android:label="Available Stock"/>
     </application>
 
 </manifest>
