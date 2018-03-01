@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_make_order"
+            android:icon="@drawable/avocado2"
+            android:title="Place Order" />
+        <item
+            android:id="@+id/nav_orders_made"
+            android:icon="@drawable/buy"
+            android:title="Orders Made" />
+        <item
+            android:id="@+id/nav_available_stock"
+            android:icon="@drawable/deliver"
+            android:title="Available Stock" />
+        <item
+            android:id="@+id/nav_fulfilled_order"
+            android:icon="@drawable/truck2"
+            android:title="Fulfilled Orders" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help1"
+                android:title="Help and Feedback" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about_us"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>
