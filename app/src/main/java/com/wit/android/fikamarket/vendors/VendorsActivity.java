@@ -162,20 +162,13 @@ public class VendorsActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_make_order) {
-
-        } else if (id == R.id.nav_orders_made) {
-            Intent i = new Intent(this, OrdersMadeActivity.class);
+        if (id == R.id.nav_available_stock) {
+            Intent i = new Intent(this, VendorsActivity.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_available_stock) {
-
-
-        } else if (id == R.id.nav_fulfilled_order) {
-
-        } else if (id == R.id.nav_help) {
-
-        } else if (id == R.id.nav_about) {
+        } else if (id == R.id.nav_make_order) {
+            Intent i = new Intent(this, OrdersMadeActivity.class);
+            startActivity(i);
 
         }
 
