@@ -26,7 +26,7 @@ public class Connection{
     public static final int CONNECTION_TIMEOUT = 10000;
     public static final int READ_TIMEOUT = 15000;
 
-    public  String genertateList(){
+    public String genertateList(){
         try{
             url = new URL("http://192.168.43.224:80/wit/farmer_stock.php");
         }catch(MalformedURLException e){
