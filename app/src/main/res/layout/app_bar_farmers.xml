@@ -20,7 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_farmers" />
+    <include layout="@layout/activity_available_stock" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

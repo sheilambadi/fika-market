@@ -8,4 +8,5 @@
     tools:context="com.wit.android.fikamarket.vendors.VendorsActivity"
     tools:showIn="@layout/app_bar_farmers">
 
+
 </android.support.constraint.ConstraintLayout>
