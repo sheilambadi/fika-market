@@ -5,30 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/buy"
-            android:title="Fill Order" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/deliver"
-            android:title="Available Stock" />
-        <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_satisfy_order"
             android:icon="@drawable/truck2"
-            android:title="Fulfilled Order" />
+            android:title="Satisfy Order" />
+
+        <item
+            android:id="@+id/nav_sell_avocado"
+            android:icon="@drawable/avocado1"
+            android:title="Add Avocado Stock" />
+
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/help1"
-                android:title="Help and Feedback" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/about_us"
-                android:title="About" />
-        </menu>
-    </item>
 
 </menu>

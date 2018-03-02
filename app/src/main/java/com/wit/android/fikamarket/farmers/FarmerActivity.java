@@ -1,6 +1,7 @@
 package com.wit.android.fikamarket.farmers;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,6 +20,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.wit.android.fikamarket.R;
+import com.wit.android.fikamarket.vendors.OrdersMadeActivity;
 import com.wit.android.fikamarket.vendors.Stock;
 import com.wit.android.fikamarket.vendors.StockAdapter;
 
@@ -104,16 +106,13 @@ public class FarmerActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_satisfy_order) {
+            Intent i = new Intent(this, FarmerActivity.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_sell_avocado) {
+            Intent i = new Intent(this, OrdersMadeActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
