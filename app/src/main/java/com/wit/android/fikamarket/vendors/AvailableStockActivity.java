@@ -76,7 +76,7 @@ public class AvailableStockActivity extends AppCompatActivity
 
                     //AvailableStockActivity availableStockActivity = new AvailableStockActivity();
                     recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-                    mAdapter = new StockAdapter(getApplicationContext(), data);
+                    mAdapter = new StockAdapter(getApplicationContext(), data, R.layout.items);
                     recyclerView.setAdapter(mAdapter);
                     recyclerView.setLayoutManager(new LinearLayoutManager(AvailableStockActivity.this));
                 }

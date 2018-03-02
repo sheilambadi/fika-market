@@ -21,8 +21,10 @@ public class StockAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     LayoutInflater inflater;
     Stock stock;
     List<Stock> data = Collections.emptyList();
+    int id;
 
-    public StockAdapter(Context context, List<Stock> data) {
+    public StockAdapter(Context context, List<Stock> data, int id) {
+        this.id=id;
         this.context = context;
         this.data = data;
         inflater = LayoutInflater.from(context);
@@ -30,7 +32,7 @@ public class StockAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.items, parent, false);
+        View view = inflater.inflate(id, parent, false);
         MyHolder holder = new MyHolder(view);
         return holder;
     }

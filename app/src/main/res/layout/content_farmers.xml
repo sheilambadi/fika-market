@@ -8,5 +8,10 @@
     tools:context="com.wit.android.fikamarket.vendors.VendorsActivity"
     tools:showIn="@layout/app_bar_farmers">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewVendor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
 
 </android.support.constraint.ConstraintLayout>
