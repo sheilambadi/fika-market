@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:label="Fika Market">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".vendors.VendorsActivity"
             android:label="@string/title_activity_farmers"
@@ -20,22 +27,19 @@
         </activity>
         <activity
             android:name=".vendors.OrdersMadeActivity"
-            android:label="Orders Made" />
+            android:label="Make Order" />
         <activity
             android:name=".vendors.AvailableStockActivity"
             android:label="Available Stock" />
         <activity
             android:name=".farmers.FarmerActivity"
-            android:label="@string/title_activity_farmer"
+            android:label="Available Orders"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".vendors.VendorOrderAvtivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".vendors.VendorOrderAvtivity"
+            android:label="Place Order">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
