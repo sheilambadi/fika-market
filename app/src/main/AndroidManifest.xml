@@ -16,11 +16,7 @@
             android:name=".vendors.VendorsActivity"
             android:label="@string/title_activity_farmers"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".vendors.OrdersMadeActivity"
@@ -31,8 +27,16 @@
         <activity
             android:name=".farmers.FarmerActivity"
             android:label="@string/title_activity_farmer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".vendors.VendorOrderAvtivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".vendors.VendorOrderAvtivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

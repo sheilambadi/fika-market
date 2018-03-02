@@ -19,13 +19,13 @@ import java.net.URL;
  * Created by sheilambadi on 3/2/18.
  */
 
-public class TaskSubmit extends AsyncTask<String, String, String> {
+public class VendorSubmit extends AsyncTask<String, String, String> {
     HttpURLConnection conn;
     URL url = null;
     Context txt;
     String urlName;
 
-    TaskSubmit(Context txt, String urlName)
+    VendorSubmit(Context txt)
     {
         this.txt = txt;
         this.urlName = urlName;
@@ -43,7 +43,8 @@ public class TaskSubmit extends AsyncTask<String, String, String> {
         try {
             //url = new URL("http://10.0.2.2:80/wit/register.php");
             //url = new URL("http://10.21.46.92:80/wit/register.php");
-            url = new URL(urlName);
+            url = new  URL("http://192.168.43.224:80/wit/farmer_post.php");
+            //url = new URL(urlName);
 
         }
         catch (MalformedURLException e)
@@ -64,7 +65,7 @@ public class TaskSubmit extends AsyncTask<String, String, String> {
             Uri.Builder builder = new Uri.Builder()
                     .appendQueryParameter("quantity", params[0])
                     .appendQueryParameter("location", params[1])
-                    .appendQueryParameter("preferred_price", params[2]);
+                    .appendQueryParameter("prefered_price", params[2]);
             String query = builder.build().getEncodedQuery();
             //Open connection for sending data
             OutputStream os = conn.getOutputStream();

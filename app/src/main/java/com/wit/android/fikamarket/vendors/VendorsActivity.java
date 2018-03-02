@@ -167,7 +167,7 @@ public class VendorsActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.nav_make_order) {
-            Intent i = new Intent(this, OrdersMadeActivity.class);
+            Intent i = new Intent(this, VendorOrderAvtivity.class);
             startActivity(i);
 
         }
